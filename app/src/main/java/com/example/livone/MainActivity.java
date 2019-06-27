@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.example.mylibsone.MathOps;
+import com.example.mylibsone.TimberX;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
         int result = MathOps.sub(10, 5);
         tvMsg.setText(String.valueOf(result));
+
+        TimberX.debug("OnCreate CB");
 
 
     }
